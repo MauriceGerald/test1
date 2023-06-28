@@ -15,13 +15,7 @@ LOGIN = 'standard_user'
 PASSWORD = 'secret_sauce'
 
 def get_driver():
-    chrome_options = Options()
-    chrome_options.add_argument("--window-size=1920,800")
-    chrome_options.add_argument('--headless')
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),
-                              options=chrome_options)
-    driver.maximize_window()
-    driver.implicitly_wait(10)
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     return driver
 
 def get_element_by_id(driver, locator):
