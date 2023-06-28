@@ -77,5 +77,3 @@ def login(driver, name, password):
 driver = get_driver()
 open_page(driver,URL)
 login(driver=driver, name=LOGIN, password=PASSWORD)
-
->>>>>>> origin/main
