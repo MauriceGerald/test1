@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
@@ -38,7 +38,7 @@ driver = get_driver()
 open_page(driver,URL)
 login(driver=driver, name=LOGIN, password=PASSWORD)
 
-=======
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
